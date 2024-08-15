@@ -1,5 +1,106 @@
 @charset "UTF-8";
 
-* {
-    margin: 0px;
+    /* Typical Device Breakpoints
+-----------------------------
+Pequenas telas: até 600
+Celular: 600 até 768
+Tablet: 768 até 992
+Desktop: 992 até 1200
+Grandes telas: min 1200
+*/
+
+:root {
+    --MarinhoMaisMaisEscuro: #1d242c;
+    --MarinhoMaisEscuro: #15192A;
+    --MarinhoEscuro: #192746;
+    --Marinho: #2C294D;
+    --Amarelo: #ffde59;
+    --Verde: #49b354;
+    --VerdeFlorescente: #57FF5D;
+    
+}
+
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #F9F9F9;
+}
+
+.header {
+    background-color: #1C2A48;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+.content {
+    width: 90%;
+    max-width: 600px;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+}
+
+.content::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 100px;
+    height: 100px;
+    background-color: #FFDD57;
+    border-radius: 10px;
+}
+
+.content::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 100px;
+    height: 100px;
+    background-color: #FFDD57;
+    border-radius: 10px;
+}
+
+.square-pattern {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 20px);
+    grid-template-rows: repeat(3, 20px);
+    gap: 5px;
+}
+
+.square-pattern div {
+    width: 20px;
+    height: 20px;
+}
+
+.square-green {
+    background-color: #00A651;
+}
+
+.square-navy {
+    background-color: #1C2A48;
 }
