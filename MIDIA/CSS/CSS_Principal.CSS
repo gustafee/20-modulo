@@ -20,7 +20,6 @@ Grandes telas: min 1200
     
 }
 
-@media screen and (max-width: 768px) {
 
 /* Reset básico para remover margens e preenchimentos padrão */
 * {
@@ -206,5 +205,4 @@ body, html {
     width: 45px;
     height: 45px;
     z-index: 0;
-}
 }
