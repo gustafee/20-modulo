@@ -20,6 +20,8 @@ Grandes telas: min 1200
     
 }
 
+@media screen and (max-width: 768px) {
+
 /* Reset básico para remover margens e preenchimentos padrão */
 * {
     margin: 0;
@@ -205,35 +207,4 @@ body, html {
     height: 45px;
     z-index: 0;
 }
-
-
-
-.green-blue-squares {
-    position: absolute; /* Permite posicionar os quadrados em relação ao container */
-    bottom: 90px; /* Distância da parte inferior do container */
-    right: 70px; /* Distância da parte direita do container */
-    display: grid; /* Usa grid layout para posicionar os quadrados */
-    grid-template-columns: repeat(4, 25px); /* Cria 4 colunas de 25px cada */
-    grid-gap: 5px; /* Espaço entre os quadrados */
-}
-
-.green-blue-squares div {
-    width: 25px; /* Largura de cada quadrado */
-    height: 25px; /* Altura de cada quadrado */
-}
-
-/* Estilo para os quadrados azuis */
-.green-blue-squares div:nth-child(1),
-.green-blue-squares div:nth-child(4),
-.green-blue-squares div:nth-child(6),
-.green-blue-squares div:nth-child(7) {
-    background-color: #1A2948; /* Cor azul escuro */
-}
-
-/* Estilo para os quadrados verdes */
-.green-blue-squares div:nth-child(2),
-.green-blue-squares div:nth-child(3),
-.green-blue-squares div:nth-child(5),
-.green-blue-squares div:nth-child(8) {
-    background-color: #1ABC9C; /* Cor verde */
 }
