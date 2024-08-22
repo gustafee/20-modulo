@@ -20,87 +20,220 @@ Grandes telas: min 1200
     
 }
 
-/* styles.css */
-
-body {
+/* Reset básico para remover margens e preenchimentos padrão */
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
 
-.container {
+/* Estilo básico para o corpo da página e configuração de fundo */
+body, html {
+    height: 100%; /* Faz com que o corpo e o html ocupem 100% da altura da tela */
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #F9F9F9;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    background-color: #ffffff; /* Cor de fundo amarela */
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
 }
 
-.header {
-    background-color: #1C2A48;
-    width: 100%;
-    padding: 20px;
-    text-align: center;
+/* Container principal que contém todos os elementos */
+.container {
     position: relative;
+    width: 600px; 
+    height: 850px; 
+    background-color: #ffffff; 
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo interno */
+    align-items: center; /* Centraliza o conteúdo interno */
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse as bordas do container */
+
 }
 
-.logo {
-    max-width: 100px;
-}
-
-.content {
-    width: 90%;
-    max-width: 600px;
-    margin-top: 20px;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    position: relative;
-}
-
-.content::before {
-    content: '';
+.quadroazul {
+    position: relative; 
+    width: 490px; 
+    height: 400px; 
+    background-color: var(--MarinhoEscuro); 
+    border-radius: 0 0 100px 0; 
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo interno */
+    align-items: center; /* Centraliza o conteúdo interno */
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse as bordas do container */
     position: absolute;
-    top: -20px;
-    left: -20px;
-    width: 100px;
-    height: 100px;
-    background-color: #FFDD57;
-    border-radius: 10px;
+    top: 450px;
+    left: 0px;
+    z-index: 1;
 }
 
-.content::after {
-    content: '';
+.quadroamarelo {
+    position: absolute; 
+    bottom: 0px; 
+    right: 0px; 
+    width: 500px; 
+    height: 380px; 
+    background-color: var(--Amarelo); 
+    border-radius: 0 0 100px 0; 
+    z-index: 0; /* Fica atrás do logo */
+}
+
+.retanguloazul {
+    background-color: var(--MarinhoEscuro);
+    width: 80px; 
+    height: 900px; 
     position: absolute;
-    bottom: -20px;
-    right: -20px;
-    width: 100px;
-    height: 100px;
-    background-color: #FFDD57;
-    border-radius: 10px;
+    left: 0px;
+    z-index: 1;
 }
 
-.square-pattern {
+.retanguloamarelo {
+    background-color: var(--Amarelo);
+    width: 390px; 
+    height: 75px; 
     position: absolute;
-    top: 50px;
-    right: 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 20px);
-    grid-template-rows: repeat(3, 20px);
-    gap: 5px;
+    bottom: 350px;
+    left: 120px;
+    z-index: 0;
 }
 
-.square-pattern div {
-    width: 20px;
-    height: 20px;
+.quadradoazul {
+    background-color: var(--MarinhoEscuro);
+    width: 350px; /* Largura da forma */
+    height: 150px; /* Altura da forma */
+    position: absolute;
+    top: 0;
+    left: 0px;
+    border-radius: 0 90px 0 0;
+    z-index: 1;
 }
 
-.square-green {
-    background-color: #00A651;
+.quadradoamarelo {
+    position: absolute; /* Permite posicionar a forma em relação ao container */
+    top: 0px; /* Ajusta a posição para parecer que está saindo do canto */
+    right: 180px; /* Ajusta a posição para parecer que está saindo do canto */
+    width: 200px; /* Largura da forma */
+    height: 110px; /* Altura da forma */
+    background-color: var(--Amarelo); /* Cor de fundo amarela */
+    border-radius: 0 90px 0 0; /* Arredonda as bordas para criar o efeito curvado */
+    z-index: 0; /* Fica atrás do logo */
 }
 
-.square-navy {
-    background-color: #1C2A48;
+/* Seção do logo */
+.logo-section {
+    position: absolute; /* Permite posicionar o logo em relação ao container */
+    top: 35px; /* Distância do topo do container */
+    left: 15px; /* Distância da esquerda do container */
+    z-index: 2; /* Garante que o logo fique acima dos outros elementos */
+}
+
+.logo-section img {
+    width: 200px; 
+    height: auto; 
+    position: absolute;
+    left: 95px;
+    top: -10px;
+}
+
+/* Quadrados decorativos na parte inferior direita */
+
+.amarelo1 {
+    background-color: var(--Amarelo);
+    position: absolute;
+    right: 90px;
+    top: 380px;
+    width: 45px;
+    height: 45px;
+    z-index: 0;
+}
+
+.amarelo2 {
+    background-color: var(--Amarelo);
+    position: absolute;
+    right: 0px;
+    top: 290px;
+    width: 45px;
+    height: 45px;
+    z-index: 0;
+}
+
+.azul1 {
+    background-color: var(--MarinhoEscuro);
+    position: absolute;
+    right: 45px;
+    top: 425px;
+    width: 45px;
+    height: 45px;
+    z-index: 0;
+}
+
+.azul2 {
+    background-color: var(--MarinhoEscuro);
+    position: absolute;
+    right: 180px;
+    top: 380px;
+    width: 45px;
+    height: 45px;
+    z-index: 0;
+}
+
+.verde1 {
+    background-color: var(--Verde);
+    position: absolute;
+    right: 135px;
+    top: 335px;
+    width: 45px;
+    height: 45px;
+    z-index: 0;
+}
+
+.verde2 {
+    background-color: var(--Verde);
+    position: absolute;
+    right: 45px;
+    top: 335px;
+    width: 45px;
+    height: 45px;
+    z-index: 0;
+}
+
+.verde3 {
+    background-color: var(--Verde);
+    position: absolute;
+    right: 0px;
+    top: 380px;
+    width: 45px;
+    height: 45px;
+    z-index: 0;
+}
+
+
+
+.green-blue-squares {
+    position: absolute; /* Permite posicionar os quadrados em relação ao container */
+    bottom: 90px; /* Distância da parte inferior do container */
+    right: 70px; /* Distância da parte direita do container */
+    display: grid; /* Usa grid layout para posicionar os quadrados */
+    grid-template-columns: repeat(4, 25px); /* Cria 4 colunas de 25px cada */
+    grid-gap: 5px; /* Espaço entre os quadrados */
+}
+
+.green-blue-squares div {
+    width: 25px; /* Largura de cada quadrado */
+    height: 25px; /* Altura de cada quadrado */
+}
+
+/* Estilo para os quadrados azuis */
+.green-blue-squares div:nth-child(1),
+.green-blue-squares div:nth-child(4),
+.green-blue-squares div:nth-child(6),
+.green-blue-squares div:nth-child(7) {
+    background-color: #1A2948; /* Cor azul escuro */
+}
+
+/* Estilo para os quadrados verdes */
+.green-blue-squares div:nth-child(2),
+.green-blue-squares div:nth-child(3),
+.green-blue-squares div:nth-child(5),
+.green-blue-squares div:nth-child(8) {
+    background-color: #1ABC9C; /* Cor verde */
 }
