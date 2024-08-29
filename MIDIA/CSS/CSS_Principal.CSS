@@ -20,6 +20,7 @@ Grandes telas: min 1200
     
 }
 
+@media (max-width: 768px) {
 
 /* Reset básico para remover margens e preenchimentos padrão */
 * {
@@ -41,28 +42,26 @@ body, html {
 /* Container principal que contém todos os elementos */
 .container {
     position: relative;
-    width: 600px; 
-    height: 850px; 
+    width: 100vw; 
+    height: 100vh; 
     background-color: #ffffff; 
     display: flex;
     justify-content: center; /* Centraliza o conteúdo interno */
     align-items: center; /* Centraliza o conteúdo interno */
     overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse as bordas do container */
+    box-shadow: 0px 0px 10px rgb(168, 168, 168);
 
 }
 
 .quadroazul {
-    position: relative; 
-    width: 490px; 
+    width: 80vw; 
     height: 400px; 
     background-color: var(--MarinhoEscuro); 
     border-radius: 0 0 100px 0; 
     display: flex;
-    justify-content: center; /* Centraliza o conteúdo interno */
-    align-items: center; /* Centraliza o conteúdo interno */
     overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse as bordas do container */
     position: absolute;
-    top: 450px;
+    bottom: 0px;
     left: 0px;
     z-index: 1;
 }
@@ -81,7 +80,7 @@ body, html {
 .retanguloazul {
     background-color: var(--MarinhoEscuro);
     width: 80px; 
-    height: 900px; 
+    height: 100vh; 
     position: absolute;
     left: 0px;
     z-index: 1;
@@ -89,11 +88,11 @@ body, html {
 
 .retanguloamarelo {
     background-color: var(--Amarelo);
-    width: 390px; 
+    width: 63%; 
     height: 75px; 
     position: absolute;
     bottom: 350px;
-    left: 120px;
+    right: 90px;
     z-index: 0;
 }
 
@@ -109,22 +108,22 @@ body, html {
 }
 
 .quadradoamarelo {
-    position: absolute; /* Permite posicionar a forma em relação ao container */
-    top: 0px; /* Ajusta a posição para parecer que está saindo do canto */
-    right: 180px; /* Ajusta a posição para parecer que está saindo do canto */
-    width: 200px; /* Largura da forma */
-    height: 110px; /* Altura da forma */
-    background-color: var(--Amarelo); /* Cor de fundo amarela */
-    border-radius: 0 90px 0 0; /* Arredonda as bordas para criar o efeito curvado */
-    z-index: 0; /* Fica atrás do logo */
+    position: absolute; 
+    top: 0px; 
+    left: 0px; 
+    width: 75vw;
+    height: 110px;
+    background-color: var(--Amarelo); 
+    border-radius: 0 90px 0 0;
+    z-index: 0; 
 }
 
 /* Seção do logo */
 .logo-section {
-    position: absolute; /* Permite posicionar o logo em relação ao container */
-    top: 35px; /* Distância do topo do container */
-    left: 15px; /* Distância da esquerda do container */
-    z-index: 2; /* Garante que o logo fique acima dos outros elementos */
+    position: absolute;
+    top: 35px; 
+    left: 15px; 
+    z-index: 2; 
 }
 
 .logo-section img {
@@ -141,7 +140,7 @@ body, html {
     background-color: var(--Amarelo);
     position: absolute;
     right: 90px;
-    top: 380px;
+    bottom: 425px;
     width: 45px;
     height: 45px;
     z-index: 0;
@@ -151,7 +150,7 @@ body, html {
     background-color: var(--Amarelo);
     position: absolute;
     right: 0px;
-    top: 290px;
+    bottom: 515px;
     width: 45px;
     height: 45px;
     z-index: 0;
@@ -161,7 +160,7 @@ body, html {
     background-color: var(--MarinhoEscuro);
     position: absolute;
     right: 45px;
-    top: 425px;
+    bottom: 380px;
     width: 45px;
     height: 45px;
     z-index: 0;
@@ -171,7 +170,7 @@ body, html {
     background-color: var(--MarinhoEscuro);
     position: absolute;
     right: 180px;
-    top: 380px;
+    bottom: 425px;
     width: 45px;
     height: 45px;
     z-index: 0;
@@ -181,7 +180,7 @@ body, html {
     background-color: var(--Verde);
     position: absolute;
     right: 135px;
-    top: 335px;
+    bottom: 470px;
     width: 45px;
     height: 45px;
     z-index: 0;
@@ -191,7 +190,7 @@ body, html {
     background-color: var(--Verde);
     position: absolute;
     right: 45px;
-    top: 335px;
+    bottom: 470px;
     width: 45px;
     height: 45px;
     z-index: 0;
@@ -201,8 +200,9 @@ body, html {
     background-color: var(--Verde);
     position: absolute;
     right: 0px;
-    top: 380px;
+    bottom: 425px;
     width: 45px;
     height: 45px;
     z-index: 0;
+}
 }
