@@ -52,6 +52,7 @@ body, html {
     box-shadow: 0px 0px 10px rgb(168, 168, 168);
     transition: width 0.7s ease, height 0.7s ease;
 
+
 }
 
 .quadroazul {
@@ -64,7 +65,17 @@ body, html {
     position: absolute;
     bottom: 0px;
     left: 0px;
-    z-index: 1;
+    z-index: 2;
+}
+
+.quadroazul > h1 {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding-left: 85px;
+    padding-top: 10px;
+    padding-right: 5px;
+    
 }
 
 .quadroamarelo {
@@ -119,7 +130,8 @@ body, html {
     z-index: 0; 
 }
 
-/* Seção do logo */
+/* Seção de foto */
+
 .logo-section {
     position: absolute;
     top: 35px; 
@@ -133,6 +145,13 @@ body, html {
     position: absolute;
     left: 95px;
     top: -10px;
+}
+
+.Foto-Fundo {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out; /* Transição suave entre as imagens */
 }
 
 /* Quadrados decorativos na parte inferior direita */
