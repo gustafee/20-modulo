@@ -90,9 +90,16 @@ body, html {
     padding-top: 10px;
     padding-right: 5px;
     position: absolute;
-    top: 50px;
-    align-items: center;
-    justify-content: center; 
+    top: 60px;
+    left: 120px;
+    align-items: center; 
+}
+
+.btn {
+    background-color: #ffde59;
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
 }
 
 .quadroamarelo {
@@ -171,7 +178,7 @@ body, html {
     right: 0px;
     z-index: 0; 
     width: 90%;
-    height: 65%;
+    height: 70%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
