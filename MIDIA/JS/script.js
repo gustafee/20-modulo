@@ -1,13 +1,11 @@
 // Array de URLs das imagens de fundo
 const backgrounds = [
-    '../Imagens/abc.jpg',
-    '../Imagens/aprendendo.jpg',
-    '../Imagens/bibilhoteca.jpg',
-    '../Imagens/estude.jpg',
-    '../Imagens/formando.jpg',
-    '../Imagens/livros.jpg',
-    '../Imagens/notbook.jpg',
-    '../Imagens/pessoas.jpg'
+    '../Imagens/quemsomos.png',
+    '../Imagens/trilhas.png',
+    '../Imagens/clientes.png',
+    '../Imagens/perguntas.png',
+    '../Imagens/valor.png',
+
 ];
 
 let currentIndex = 0;
@@ -23,8 +21,8 @@ function changeBackground() {
     currentIndex = (currentIndex + 1) % backgrounds.length;
 }
 
-// Define o intervalo de troca (5 segundos, por exemplo)
-setInterval(changeBackground, 7000);
+// Define o intervalo de troca 
+setInterval(changeBackground, 10000);
 
 // Define a imagem inicial
 changeBackground();

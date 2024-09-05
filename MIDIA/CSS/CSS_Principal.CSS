@@ -46,6 +46,7 @@ body, html {
 }
 
 /* Container principal que contém todos os elementos */
+
 .container {
     position: relative;
     width: 100vw; 
@@ -54,7 +55,7 @@ body, html {
     display: flex;
     justify-content: center; 
     align-items: center; 
-    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse as bordas do container */
+    overflow: hidden; 
     box-shadow: 0px 0px 10px rgb(168, 168, 168);
     transition: width 0.7s ease, height 0.7s ease;
 
@@ -67,7 +68,7 @@ body, html {
     background-color: var(--MarinhoEscuro); 
     border-radius: 0 0 100px 0; 
     display: flex;
-    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse as bordas do container */
+    overflow: hidden; 
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -110,7 +111,7 @@ body, html {
     height: 380px; 
     background-color: var(--Amarelo); 
     border-radius: 0 0 100px 0; 
-    z-index: 1; /* Fica atrás do logo */
+    z-index: 1; 
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.466);
 }
 
@@ -135,8 +136,8 @@ body, html {
 
 .quadradoazul {
     background-color: var(--MarinhoEscuro);
-    width: 350px; /* Largura da forma */
-    height: 150px; /* Altura da forma */
+    width: 350px; 
+    height: 150px; 
     position: absolute;
     top: 0;
     left: 0px;
@@ -174,18 +175,19 @@ body, html {
 
 .Foto-Fundo {
     position: absolute;
-    top: 0px;
+    top: 70px;
     right: 0px;
     z-index: 0; 
-    width: 90%;
-    height: 70%;
+    width: 700px;
+    height: 550px;
+    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: background-image 2.7s ease-in-out; /* Transição suave entre as imagens */
+    transition: background-image 2.0s ease-in-out; /* Transição suave entre as imagens */
 }
 
-.Foto-Fundo .degrade {
+/*.Foto-Fundo .degrade {
     position: absolute;
     top: 0;
     left: 0;
@@ -266,7 +268,7 @@ body, html {
     height: 45px;
     z-index: 0;
 }
-}
+
 
 @media (min-width: 768px) and (max-width: 1200px) {
 
