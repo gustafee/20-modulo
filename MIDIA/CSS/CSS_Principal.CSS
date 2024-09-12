@@ -175,13 +175,13 @@ body, html {
 
 .Foto-Fundo {
     position: absolute;
-    top: 70px;
-    right: 0px;
+    bottom: 150px;
+    left: 30px;
     z-index: 0; 
-    width: 650px;
-    height: 450px;
+    width: 100%;
+    height: 100%;
     
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     transition: background-image 2.0s ease-in-out; /* Transição suave entre as imagens */
