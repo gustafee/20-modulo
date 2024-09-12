@@ -22,7 +22,7 @@ function changeBackground() {
 }
 
 // Define o intervalo de troca 
-setInterval(changeBackground, 4000);
+setInterval(changeBackground, 10000);
 
 // Define a imagem inicial
 changeBackground();
