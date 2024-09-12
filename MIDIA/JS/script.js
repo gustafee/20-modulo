@@ -1,10 +1,10 @@
 // Array de URLs das imagens de fundo
 const backgrounds = [
-    '../Imagens/quemsomos.png',
-    '../Imagens/trilhas.png',
-    '../Imagens/clientes.png',
-    '../Imagens/perguntas.png',
-    '../Imagens/valor.png',
+    '../Imagens/Quem Somos/1.png',
+    '../Imagens/Quem Somos/2.png',
+    '../Imagens/Quem Somos/3.png',
+    '../Imagens/Quem Somos/4.png',
+    '../Imagens/Quem Somos/5.png',
 
 ];
 
