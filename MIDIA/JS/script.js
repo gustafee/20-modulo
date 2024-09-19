@@ -26,3 +26,16 @@ setInterval(changeBackground, 10000);
 
 // Define a imagem inicial
 changeBackground();
+
+
+
+
+
+ScrollReveal().reveal('.section', {
+    duration: 1000, // Duração da animação
+    distance: '50px', // Distância que o elemento se moverá
+    origin: 'bottom', // O ponto de origem da animação (de baixo para cima)
+    easing: 'ease-in-out', // Efeito de suavização
+    reset: true // Define se a animação deve reiniciar ao sair e voltar para a tela
+});
+
